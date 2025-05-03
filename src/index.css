@@ -1,0 +1,15 @@
+@import 'tailwindcss';
+
+@theme{
+    --color-ysa-black: #383838;
+    --color-ysa-yellow: #FFB81C;
+    --color-ysa-yellow-light: #FFE6AE;
+    --color-ysa-blue-dark: #006184;
+    --color-ysa-blue-light: #01B6D1;
+}
+
+/* Sidebar */
+
+.nav-link{
+    @apply flex flex-row items-center gap-4 justify-normal
+}
