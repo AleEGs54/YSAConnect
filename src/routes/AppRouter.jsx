@@ -5,6 +5,7 @@ import LeaderManagementPage from '../pages/LeaderManagementPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import ParticipantsListPage from '../pages/ParticipantsListPage';
 import StatsPage from '../pages/StatsPage';
+import Dashboard from '../pages/DashboardPage'
 
 //import { DulicatesPage, LoginPage, LeaderManagementPage, NotfoundPage, ParticipantsListPage, StatsPage } from '../pages'
 
@@ -16,6 +17,7 @@ export default function AppRouter(){
     return(
         <Routes>
             <Route path="/" element={<LoginPage/>}/>
+            <Route path="/dashboard" element={<Dashboard/>}/>
             <Route path="/participants" element={<ParticipantsListPage/>}/>
             <Route path="/stats" element={<StatsPage/>}/>
             <Route path="/leaders" element={<LeaderManagementPage/>}/>

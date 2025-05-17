@@ -1,64 +1,67 @@
 import { useEffect, useState } from "react";
-import SearchBar from "../components/common/Searchbar/Searchbar";
-import Table from "../components/common/Table/Table";
+import SearchBar from "../components/registration/SearchBar/SearchBar";
+import RegistrationTable from "../components/registration/RegistrationTable/RegistrationTable";
 import axios from "axios";
-import { get } from "react-hook-form";
+import FilterControls from "../components/registration/FilterControls/FilterControls";
+import SortControls from "../components/registration/SortControls/SortControls";
+import ShowControls from "../components/registration/ShowControls/ShowControls";
+import FiltersContextProvider from "../context/FiltersContext";
 
 
-export default  function ParticipantsListPage() {
-    const [searchTerm, setSearchTerm] = useState("");
+//No acabado
+// function resetFilters() {
+//     sessionStorage.removeItem("sortBy");
+//     sessionStorage.removeItem("toShow");
+//     sessionStorage.removeItem("filters");
+// }
+
+export default function ParticipantsListPage() {
     const [users, setUsers] = useState([])
+    const [filteredUsers, setFilteredUsers] = useState([]);
+
+    const [isOpen, setIsOpen] = useState(false);
 
     const getUsers = async () => {
         const response = await axios.get('json/participantes.json');
-        console.log(response.data);
         setUsers(response.data);
+        setFilteredUsers(response.data);
     }
 
     useEffect(() => {
         getUsers();
-    },[])
-
-    const tableHeader = [
-        'DNI',
-        'Nombre',
-        'Apellido Paterno',
-        'Apellido Materno',
-        'Barrio',
-        'Estaca',
-    ]
-
-
+    }, [])
 
     return (
-        <div className="row-span-2 grid grid-cols-4 grid-rows-[50px_5rem_1fr] h-full gap-2">
+        <div
+            className="mt-2 mb-2 flex flex-col gap-2"
+        // className="row-span-2 col-start-3 col-end-17 grid grid-cols-6 grid-rows-[50px_5rem_1fr] h-full pl-2 gap-2"
+        >
             <header className="col-span-full row-span-1 flex flex-col items-center justify-center">
                 <h1>Lista de Participantes</h1>
             </header>
-            <div className="col-span-full row-span-1 flex flex-col items-center justify-center">
-                <SearchBar value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder="Buscar participante" />
-            </div>
-            <div className="col-span-3 w-full h-90% border-2  overflow-scroll ">
-                <Table tHeader={tableHeader} data={users}/>
-            </div>
-            <div className=" border-1 flex flex-col items-center justify-center">
-                <Filter />
-            </div>
+            
+            <FiltersContextProvider >
+
+                <SearchBar
+                    placeholder="Buscar participante" />
+
+                <div className=" flex flex-col gap-2 mb-5">
+                    <button onClick={() => setIsOpen(!isOpen)} className="bg-ysa-yellow rounded-full p-2">
+                        {isOpen ? "Cerrar" : "Filtros"}
+                    </button>
+                    <div className={`order-3 flex flex-col gap-2  p-4 transition-all duration-300 ${isOpen ? 'block' : 'hidden'}`}>
+                        <FilterControls users={users} setFilteredUsers={setFilteredUsers} />
+                        <SortControls />
+                        <ShowControls />
+                    </div>
+                </div>
+
+                <RegistrationTable
+                    data={filteredUsers}
+                />
+            </FiltersContextProvider>
         </div>
     )
 }
 
-function Filter(){
-    return (
-        <div className="flex flex-col gap-2">
-            <label htmlFor="filter">Filtrar por:</label>
-            <select name="filter" id="filter" className="border-2 border-black rounded-md p-2">
-                <option value="dni">DNI</option>
-                <option value="nombre">Nombre</option>
-                <option value="apellido">Apellido</option>
-                <option value="barrio">Barrio</option>
-                <option value="estaca">Estaca</option>
-            </select>
-        </div>
-    )
-}
+

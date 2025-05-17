@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@plugin "@midudev/tailwind-animations";
 
 @theme{
     --color-ysa-black: #383838;
@@ -11,5 +12,5 @@
 /* Sidebar */
 
 .nav-link{
-    @apply flex flex-row items-center gap-4 justify-normal
+    @apply flex flex-row items-center gap-4 hover:bg-ysa-yellow-light rounded-lg p-2;
 }
