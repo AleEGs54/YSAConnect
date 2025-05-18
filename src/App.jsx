@@ -11,6 +11,7 @@ export default function App() {
     return (
         <>
             <main
+            id="main"
                 className='flex flex-col relative p-0.5'
             // className="grid grid-cols-[16fr] grid-rows-2 h-screen"
             >

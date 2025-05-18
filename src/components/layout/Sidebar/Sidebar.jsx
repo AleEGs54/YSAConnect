@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom"
 import '/assets/icons/sprite.svg';
-import { set } from "react-hook-form";
 
 export default function Sidebar({ isMenuCollapsed, setIsMenuCollapsed }) {
 
@@ -40,7 +39,7 @@ export default function Sidebar({ isMenuCollapsed, setIsMenuCollapsed }) {
         <>
             <nav
                 className={
-                    `${isMenuCollapsed ? "hidden" : " mt-19 flex flex-col items-center w-full h-full z-50 animate-fade-in-up"} `
+                    `${isMenuCollapsed ? "hidden" : " flex flex-col items-center w-full h-full p-4 animate-fade-in-up"} `
                 }
             // className={"col-span-1 row-span-2 flex flex-col h-full border-2 border-black p-4  w-2xs transition-all duration-300 ease-in-out overflow-hidden " + (isCollapsed ? " w-27" : " w-54")}
             >

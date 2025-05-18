@@ -1,8 +1,8 @@
 import RegistrationRow from "../RegistrationRow/RegistrationRow";
 
-export default function ResgistrationTable({ data}) {
+export default function ResgistrationTable({ data, isOpen }) {
 
-    
+
 
     // If the data is not an array or is empty, return a loading message
     if (!Array.isArray(data) || data.length === 0) {
@@ -15,13 +15,14 @@ export default function ResgistrationTable({ data}) {
     // if(!toRender) return null
 
     return (
-            <div
-            className="col-span-5 w-full max-h-[90vh] overflow-auto order-4 "
-            >
-                <table className="min-w-full border-collapse">
-                    <RegistrationRow data={data} />
-                </table>
-            </div>
+        <div
+            className={`col-span-5 w-full overflow-auto order-4 ${isOpen ? "hidden" : ""}`}
+        >
+            <table className="min-w-full border-collapse">
+                <RegistrationRow data={data} />
+            </table>
+            
+        </div>
     )
 }
 

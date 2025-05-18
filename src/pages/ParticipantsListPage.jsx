@@ -33,32 +33,31 @@ export default function ParticipantsListPage() {
 
     return (
         <div
-            className="mt-2 mb-2 flex flex-col gap-2"
+            id="ParticipantsListPage"
+            className="mt-2 mb-2 flex flex-col gap-2 max-h-lvh items-center"
         // className="row-span-2 col-start-3 col-end-17 grid grid-cols-6 grid-rows-[50px_5rem_1fr] h-full pl-2 gap-2"
         >
             <header className="col-span-full row-span-1 flex flex-col items-center justify-center">
                 <h1>Lista de Participantes</h1>
             </header>
-            
+
             <FiltersContextProvider >
 
-                <SearchBar
-                    placeholder="Buscar participante" />
+                <SearchBar placeholder="Buscar participante" />
 
-                <div className=" flex flex-col gap-2 mb-5">
+                <div className=" flex flex-col gap-2 mb-5 w-[90%]">
                     <button onClick={() => setIsOpen(!isOpen)} className="bg-ysa-yellow rounded-full p-2">
                         {isOpen ? "Cerrar" : "Filtros"}
                     </button>
                     <div className={`order-3 flex flex-col gap-2  p-4 transition-all duration-300 ${isOpen ? 'block' : 'hidden'}`}>
-                        <FilterControls users={users} setFilteredUsers={setFilteredUsers} />
                         <SortControls />
+                        <FilterControls users={users} setFilteredUsers={setFilteredUsers} />
                         <ShowControls />
                     </div>
                 </div>
 
-                <RegistrationTable
-                    data={filteredUsers}
-                />
+                <RegistrationTable data={filteredUsers} isOpen={isOpen}/>
+
             </FiltersContextProvider>
         </div>
     )

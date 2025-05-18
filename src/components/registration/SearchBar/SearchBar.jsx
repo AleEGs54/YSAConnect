@@ -7,7 +7,7 @@ export default function SearchBar({ placeholder = "Buscar" }) {
 
     return (
         <div 
-        className="flex items-center justify-center mt-3 mb-3"
+        className="flex w-[90%] items-center justify-center mt-3 mb-3"
         //className="col-span-full row-span-1 flex flex-col items-center justify-center"
         >
             <div className="relative w-full">

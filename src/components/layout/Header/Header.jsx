@@ -6,7 +6,7 @@ export default function Header({ isMenuCollapsed, setIsMenuCollapsed }) {
 
     return (
         <header
-            className="z-50 p-4 flex top-0 left-0 bg-white shadow-md "
+            className="z-50 top-2.5 left-2.5 bg-white fixed"
         >
             <div
                 className="cursor-pointer"
