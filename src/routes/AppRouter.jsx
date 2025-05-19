@@ -23,7 +23,6 @@ export default function AppRouter(){
             <Route path="/leaders" element={<LeaderManagementPage/>}/>
             <Route path="/duplicates" element={<DuplicatesPage/>}/>
             <Route path="/help" element={<HelpPage/>}/>
-            <Route path="/" element={<LoginPage/>}/>
             <Route path="*" element={<NotFoundPage/>}/>
         </Routes>
     )

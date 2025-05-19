@@ -6,7 +6,7 @@
  * @param {*} defaultValue - The value to return if the item does not exist in session storage.
  * @returns {*} The retrieved object or the default value.
  */
-export default function getSessionObject(key, defaultValue) {
+export default function getsessionStorageObject(key, defaultValue) {
     try {
         const item = sessionStorage.getItem(key);
         return item ? JSON.parse(item) : defaultValue;

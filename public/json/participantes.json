@@ -13,7 +13,8 @@
     "Pagado": true,
     "Correo": "luis.garciacorreo.com",
     "Teléfono": "987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "23456789",
@@ -45,7 +46,8 @@
     "Pagado": true,
     "Correo": "jose.ramirezcorreo",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   },
   {
     "Dni": "45678901",
@@ -125,7 +127,8 @@
     "Pagado": false,
     "Correo": "valentina.silva@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Estaca"
   },
   {
     "Dni": "90123456",
@@ -157,7 +160,8 @@
     "Pagado": false,
     "Correo": "fernanda.reyes@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   },
   {
     "Dni": "22334455",
@@ -189,7 +193,8 @@
     "Pagado": false,
     "Correo": "camila.delgado@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Estaca"
   },
   {
     "Dni": "44556677",
@@ -253,7 +258,8 @@
     "Pagado": false,
     "Correo": "sofia.mejia@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "88990011",
@@ -269,7 +275,8 @@
     "Pagado": true,
     "Correo": "ricardo.vargas@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "99001122",
@@ -285,7 +292,8 @@
     "Pagado": false,
     "Correo": "daniela.fuentes@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "10111213",
@@ -349,7 +357,8 @@
     "Pagado": false,
     "Correo": "hector.vega@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "15161718",
@@ -365,7 +374,8 @@
     "Pagado": true,
     "Correo": "natalia.guzman@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "16171819",
@@ -381,7 +391,8 @@
     "Pagado": false,
     "Correo": "esteban.mora@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Estaca"
   },
   {
     "Dni": "17181920",
@@ -413,7 +424,8 @@
     "Pagado": false,
     "Correo": "raul.paz@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "19202122",
@@ -429,7 +441,8 @@
     "Pagado": true,
     "Correo": "patricia.rosales@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "20212223",
@@ -477,7 +490,8 @@
     "Pagado": false,
     "Correo": "andres.salazar@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "23242526",
@@ -525,7 +539,8 @@
     "Pagado": true,
     "Correo": "lorena.jimenez@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "26272829",
@@ -541,7 +556,8 @@
     "Pagado": false,
     "Correo": "felipe.carrillo@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "27282930",
@@ -605,7 +621,8 @@
     "Pagado": false,
     "Correo": "lucas.acosta@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "31323334",
@@ -637,7 +654,8 @@
     "Pagado": false,
     "Correo": "sebastian.quispe@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "13141516",
@@ -669,7 +687,8 @@
     "Pagado": false,
     "Correo": "hector.vega@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "15161718",
@@ -685,7 +704,8 @@
     "Pagado": true,
     "Correo": "natalia.guzman@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "16171819",
@@ -749,7 +769,8 @@
     "Pagado": true,
     "Correo": "patricia.rosales@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "20212223",
@@ -797,7 +818,8 @@
     "Pagado": false,
     "Correo": "andres.salazar@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Barrio"
   },
   {
     "Dni": "23242526",
@@ -813,7 +835,8 @@
     "Pagado": true,
     "Correo": "renata.rivas@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   },
   {
     "Dni": "24252627",
@@ -829,7 +852,8 @@
     "Pagado": false,
     "Correo": "ivan.paredes@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   },
   {
     "Dni": "25262728",
@@ -861,7 +885,8 @@
     "Pagado": false,
     "Correo": "felipe.carrillo@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Líder JAS de Estaca"
   },
   {
     "Dni": "27282930",
@@ -877,7 +902,8 @@
     "Pagado": true,
     "Correo": "tamara.ortega@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "28293031",
@@ -909,7 +935,8 @@
     "Pagado": true,
     "Correo": "julieta.serrano@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro Auxiliar"
   },
   {
     "Dni": "30313233",
@@ -925,7 +952,8 @@
     "Pagado": false,
     "Correo": "lucas.acosta@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   },
   {
     "Dni": "31323334",
@@ -941,7 +969,8 @@
     "Pagado": true,
     "Correo": "emma.campos@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Miembro de STAFF"
   },
   {
     "Dni": "32333435",
@@ -957,6 +986,7 @@
     "Pagado": false,
     "Correo": "sebastian.quispe@correo.com",
     "Teléfono": "+51 987654321",
-    "Talla": "M"
+    "Talla": "M",
+    "Rol": "Coordinador"
   }
 ]

@@ -1,6 +1,6 @@
 import RegistrationRow from "../RegistrationRow/RegistrationRow";
 
-export default function ResgistrationTable({ data, isOpen }) {
+export default function RegistrationTable({ data, isOpen }) {
 
 
 

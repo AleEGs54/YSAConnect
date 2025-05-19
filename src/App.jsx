@@ -12,13 +12,14 @@ export default function App() {
         <>
             <main
             id="main"
-                className='flex flex-col relative p-0.5'
+                className='flex flex-col relative p-0.5 pt-3 pb-2.5'
             // className="grid grid-cols-[16fr] grid-rows-2 h-screen"
             >
                 <Header isMenuCollapsed={isMenuCollapsed} setIsMenuCollapsed={setIsMenuCollapsed} />
                 <Sidebar isMenuCollapsed={isMenuCollapsed} setIsMenuCollapsed={setIsMenuCollapsed} />
-                {isMenuCollapsed &&
-                    <AppRouter />}
+                <div className={isMenuCollapsed ? 'block' : 'hidden'}>
+                    <AppRouter />
+                </div>
             </main>
         </>
     )

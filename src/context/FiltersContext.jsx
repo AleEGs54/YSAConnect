@@ -28,6 +28,7 @@ const initialState = {
     searchTerm: sessionStorage.getItem("searchTerm") || "",
     sortBy: sessionStorage.getItem("sortBy") || "Dni",
     toShow: getSessionObject("toShow", {
+        Rol: false,
         Dni: true,
         Nombre: true,
         Apellidos: true,
@@ -60,6 +61,8 @@ function reducer(filtersState, action) {
             return { ...filtersState, toShow: action.payload };
         case "SET_FILTERS":
             return { ...filtersState, filtersList: action.payload };
+        case "RESET_FILTERS":
+            return { initialState };
         default:
             return filtersState;
     }

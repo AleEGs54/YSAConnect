@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { FiltersContext, FiltersDispatchContext } from "../../../context/FiltersContext";
 
-export default function ShowControls() {
+export default function ShowControls({users}) {
 
     const filters = useContext(FiltersContext);
     const dispatch = useContext(FiltersDispatchContext);
@@ -23,6 +23,10 @@ export default function ShowControls() {
         <>
             <div className="flex flex-col gap-2 col-start-2 row-start-1">
                 <h2>Mostrar:</h2>
+                {Array.isArray(users) && users.every(u => u.Rol) && <label className="flex items-center gap-2">
+                    <input type="checkbox" onChange={handleChange} checked={filters.toShow.Rol} name="Rol" id="Rol" />
+                    Rol
+                </label> }
                 <label className="flex items-center gap-2">
                     <input type="checkbox" onChange={handleChange} checked={filters.toShow.Dni} name="Dni" id="Dni" />
                     Dni

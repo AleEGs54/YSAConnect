@@ -80,7 +80,7 @@ export default function RegistrationRow({ data }) {
             {/* Rows */}
             <tbody className="text-center [&>tr>td]:py-4 ">
                 {filteredData.map((row, rowIndex) => (
-                    <tr key={rowIndex} className="odd:bg-ysa-yellow-light hover:bg-ysa-blue-light">
+                    <tr key={rowIndex} className={data.every((row) => row.Rol) ? 'odd:bg-ysa-blue-light hover:bg-ysa-blue-dark hover:text-white' : 'odd:bg-ysa-yellow-light hover:bg-ysa-blue-light'}>
                         {Object.keys(toShow).map((key, index) =>
                             toShow[key] && (
                                 <td
