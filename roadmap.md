@@ -11,7 +11,7 @@
 - [/] Crear vistas básicas de:
   - [ ] LoginPage
   - [/] RegistrationDashboardPage
-  - [ ] LeaderManagementPage
+  - [ ] CounselorsPage
   - [ ] ActivityLogPage
   - [ ] StatsPage
   - [ ] NotFoundPage
@@ -32,7 +32,7 @@
 
 ## 📄 Fase 3: Registro de personas
 
-- [/] Implementar `RegistrationTable.jsx`
+- [/] Implementar `RecordsTable.jsx`
 - [/] Crear `RegistrationRow`, `RegistrationForm`
 - [/] Agregar filtros: `SearchBar`, `SortControls`, `FilterControls`
 - [/] Usar `fetch` para datos desde `registrationService.js`

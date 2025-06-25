@@ -93,7 +93,7 @@ export default function Sidebar({ isMenuCollapsed, setIsMenuCollapsed }) {
                                 <svg width={30} height={30} viewBox="0 0 24 24" fill="none">
                                     <use href="/assets/icons/sprite.svg#icon-leaders" />
                                 </svg>
-                                {showText && <span>Líderes</span>}
+                                {showText && <span>Consejeros</span>}
                             </Link>
                         </li>
                         <li>
@@ -108,9 +108,19 @@ export default function Sidebar({ isMenuCollapsed, setIsMenuCollapsed }) {
                                 {showText && <span>Duplicados</span>}
                             </Link>
                         </li>
-                    </ul>
-                    <br />
-                    <ul className="flex flex-col gap-4 pr-2.5 pl-2.5 jusstify-center ">
+                        <li>
+                            <Link 
+                            to='/tools' 
+                            className="nav-link"
+                            onClick={toggleMenu}
+                            >
+                                <svg width={30} height={30} viewBox="0 0 24 24" fill="none">
+                                    <use href="/assets/icons/sprite.svg#icon-tool" />
+                                </svg>
+                                {showText && <span>Herramientas</span>}
+                            </Link>
+                        </li>
+                        
                         <li>
                             <Link 
                             to='/help' 
