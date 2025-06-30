@@ -66,4 +66,13 @@ utilities.normalizeString = (str) => {
   return str;
 };
 
+utilities.showPassword = ()  => {
+  let x = document.getElementById("account_password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
 export default utilities;

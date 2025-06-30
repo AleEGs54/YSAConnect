@@ -20,7 +20,7 @@ export default function Header({ isMenuCollapsed, setIsMenuCollapsed }) {
                         </svg>
                         
                         :
-                        <span className="text-3xl">X</span>
+                        <span className="text-3xl w-[30px] h-[30px]">X</span>
                 }
             </div>
         </header>

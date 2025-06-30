@@ -9,24 +9,11 @@ export default function useFetch(url) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-// useEffect(() => {
-//   setLoading(true);
-//   async function getData() {
-//     try {
-//       const response = await axios.get(url);
-//       setData(response.data);
-//       setLoading(false);
-//     } catch (error) {
-//       setError(error);
-//       setLoading(false);
-//     }
-//   }
-//   getData();
-// }, [url]);
-
 
   const get = async (url) => {
     try {
+      setData(null);
+      setError(null);
       setLoading(true);
       const response = await axios.get(url);
       setData(response.data);

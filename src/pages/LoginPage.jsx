@@ -1,5 +1,6 @@
 import { useState } from "react"
 import usePost from "../hooks/usePost"
+import utilities from "../utils"
 
 export default function LoginPage(){
     const [loginInfo, setLoginInfo] = useState({account_email: null, account_password: null})
@@ -14,7 +15,6 @@ export default function LoginPage(){
     
     const handleOnSubmit = (e) => {
         e.preventDefault()
-        console.log(`loginInfo: `, loginInfo)
 
         const headers = {
             'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ export default function LoginPage(){
                 ? <div className="bg-ysa-yellow rounded-[8px] p-2 m-2">Error: {error.errors.errors.map(e => e.msg)}</div>
                 : <div className="bg-ysa-yellow rounded-[8px] p-2 m-2">Error: Contraseña o correo incorrectos</div>
                 }
-                <form onSubmit={handleOnSubmit} className="flex flex-col justify-center w-80 gap-5 p-5 bg-white rounded-[8px]" >
+                <form onSubmit={handleOnSubmit} className="flex flex-col justify-center w-9/10 gap-5 p-5 bg-white rounded-[8px]" >
                     <label className="flex flex-col gap-2 ">
                         Correo Electrónico
                         <input
@@ -54,6 +54,7 @@ export default function LoginPage(){
                     <label className="flex flex-col gap-2 mt-2">
                         Contraseña
                         <input 
+                        id="account_password"
                         name="account_password"
                         type="password" 
                         required 
@@ -62,6 +63,11 @@ export default function LoginPage(){
                         onChange={handleOnChange}
                          />
                     </label>
+                    <button
+                    className="bg-ysa-yellow text-ysa-black rounded-[8px] p-2 w-fit"
+                    type="button"
+                    onClick={utilities.showPassword}
+                    >Mostrar / Ocultar</button>
                     <button 
                     type="submit"
                     className="bg-zinc-700 rounded-[8px] p-2 text-white"

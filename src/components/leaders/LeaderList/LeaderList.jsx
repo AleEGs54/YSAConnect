@@ -10,7 +10,7 @@ export default function LeaderList() {
 
     // Cargar roles al montar el componente
     useEffect(() => {
-        rolesFetch.get(`${import.meta.env.VITE_API_URL}/account/leaders/getRoles`);
+        rolesFetch.get(`${import.meta.env.VITE_API_URL}/roles/all`);
     }, []);
 
     // Actualizar rolesList cuando rolesFetch.data cambie
@@ -24,8 +24,8 @@ export default function LeaderList() {
     useEffect(() => {
         const url =
             role === "all"
-                ? `${import.meta.env.VITE_API_URL}/account/leaders`
-                : `${import.meta.env.VITE_API_URL}/account/leaders/${role}`;
+                ? `${import.meta.env.VITE_API_URL}/leaders`
+                : `${import.meta.env.VITE_API_URL}/leaders/role/${role}`;
         leadersFetch.get(url);
     }, [role]);
 

@@ -12,7 +12,7 @@ export default function ParticipantsListPage() {
     const fetch = useFetch();
 
     useEffect(() => {
-        fetch.get(`${import.meta.env.VITE_API_URL}/participants`);
+        fetch.get(`${import.meta.env.VITE_API_URL}/participants/all`);
     }, [])
 
     useEffect(() => {
